@@ -12,6 +12,8 @@ func channelLabel(channel string) string {
 		return "Shopee"
 	case "olx":
 		return "OLX"
+	case "facebook":
+		return "Facebook"
 	case "other":
 		return "Outro"
 	default:
@@ -25,13 +27,14 @@ func channelOptions() []map[string]string {
 		{"value": "mercadolivre", "label": "Mercado Livre"},
 		{"value": "shopee", "label": "Shopee"},
 		{"value": "olx", "label": "OLX"},
+		{"value": "facebook", "label": "Facebook"},
 		{"value": "other", "label": "Outro"},
 	}
 }
 
 func validChannel(channel string) bool {
 	switch channel {
-	case "direct", "mercadolivre", "shopee", "olx", "other":
+	case "direct", "mercadolivre", "shopee", "olx", "facebook", "other":
 		return true
 	default:
 		return false
