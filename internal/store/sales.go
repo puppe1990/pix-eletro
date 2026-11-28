@@ -14,7 +14,7 @@ type CreateSaleInput struct {
 	// AccessoryIDs are optional extra items sold with the main (cables, etc.).
 	AccessoryIDs  []int64
 	SoldAt        string // ISO datetime or date
-	Channel       string // direct, mercadolivre, shopee, olx, other
+	Channel       string // direct, mercadolivre, shopee, olx, facebook, other
 	GrossCents    int64
 	FeeCents      int64
 	ShippingCents int64
